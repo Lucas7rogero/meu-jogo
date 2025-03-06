@@ -10,7 +10,7 @@ class CenaJogo extends Phaser.Scene {
     this.load.image("moeda", "assets/jogo/star.png"); // Moedas
     this.load.image("vitoria", "assets/inicio/victory.png"); // Tela de vitória
     this.load.image("gameOver", "assets/jogo/gameover.png"); // Tela de game over
-
+    //
     // Carrega o sprite do personagem
     this.load.spritesheet("dude", "assets/jogo/dude.png", {
       frameWidth: 133,
