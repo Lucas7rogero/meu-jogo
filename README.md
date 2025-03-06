@@ -16,4 +16,4 @@ O Star Hunter é um jogo em 2D no qual o jogador tem como função, capturar as 
 
 ## 🔗 Link do Jogo
 
-Acesse o jogo em: [ STAR HUNTER](http://127.0.0.1:5500/index2.html)
+Acesse o jogo em: [ STAR HUNTER](https://lucas7rogero.github.io/meu-jogo/)
