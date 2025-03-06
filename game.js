@@ -5,16 +5,15 @@ class CenaJogo extends Phaser.Scene {
 
   preload() {
     // Carrega as imagens e spritesheets usadas no jogo
-    this.load.image("ceu", "assets/jogo/sky.png"); // Fundo do jogo
-    this.load.image("plataforma", "assets/jogo/platform.png"); // Plataforma
-    this.load.image("moeda", "assets/jogo/star.png"); // Moedas
+    this.load.image("ceu", "assets/inicio/jogo/sky.png"); // Fundo do jogo
+    this.load.image("plataforma", "assets/inicio/jogo/platform.png"); // Plataforma
+    this.load.image("moeda", "assets/inicio/jogo/star.png"); // Moedas
     this.load.image("vitoria", "assets/inicio/victory.png"); // Tela de vitória
     this.load.image("gameOver", "assets/jogo/gameover.png"); // Tela de game over
-    //
     // Carrega o sprite do personagem
-    this.load.spritesheet("dude", "assets/jogo/dude.png", {
-      frameWidth: 133,
-      frameHeight: 162,
+    this.load.spritesheet("dude", "assets/inicio/jogo/dude.png", {
+      frameWidth: 32.5,
+      frameHeight: 43,
     });
   }
 
@@ -42,7 +41,7 @@ class CenaJogo extends Phaser.Scene {
     this.jogador = this.physics.add.sprite(400, 300, "dude");
     this.jogador.setBounce(0.2);
     this.jogador.setCollideWorldBounds(true);
-    this.jogador.setScale(0.4);
+    this.jogador.setScale(2.0);
 
     // Colisão entre o jogador e as plataformas
     this.physics.add.collider(this.jogador, this.plataformas);
