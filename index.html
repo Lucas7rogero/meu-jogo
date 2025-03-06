@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo Phaser</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #87ceeb;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .imagem-topo {
+        width: 500px;
+        height: auto;
+        margin-bottom: 0px;
+      }
+      .botao {
+        margin-top: -170px;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+      .botao img {
+        width: 200px;
+        height: auto;
+        transition: transform 0.3s;
+      }
+      .botao:hover img {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="imagem-topo"
+        src="assets/inicio/logo.png"
+        alt="Imagem Acima do Botão"
+      />
+      <canvas id="gameCanvas"></canvas>
+      <button
+        class="botao"
+        type="button"
+        onclick="window.location.href='index2.html'"
+      >
+        <img src="assets/inicio/jogar.png" alt="Botão de Redirecionamento" />
+      </button>
+    </div>
+  </body>
+</html>
